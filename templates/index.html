@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI GPT-3 Chat API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 80%; /* Adjust the width as needed */
+            text-align: left; /* Align text to the left for code readability */
+            overflow: auto; /* Add scrolling if content overflows */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        pre.language-python {
+            background-color: #272822; /* Background color for code block (dark theme) */
+            color: #f8f8f2; /* Text color for code */
+            padding: 10px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            border-radius: 3px;
+            font-size: 14px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height as needed */
+            font-family: Monaco, monospace; /* Use a monospaced font for code */
+            max-height: 400px; /* Set a maximum height for the code block */
+            overflow-y: auto; /* Add vertical scrolling if needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OpenAI GPT-3 Chat API</h1>
+        <form action="/get_response" method="post">
+            <label for="prompt">Enter your prompt:</label>
+            <input type="text" id="prompt" name="prompt" required>
+            <button type="submit">Get Response</button>
+        </form>
+        <div id="prompt-display">
+            <h2>Prompt:</h2>
+            <p>{{ prompt }}</p>
+        </div>
+        <div id="response">
+            <h2>Response:</h2>
+            <pre class="language-python">{{ response }}</pre>
+        </div>
+    </div>
+</body>
+</html>
