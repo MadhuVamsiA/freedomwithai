@@ -40,4 +40,18 @@ Note: Store the key somewhere as we can't see the key once we created.
 
 !pip install requests
 
+**********************************************
+# 4. Run the .py file
+**********************************************
+1. Open anconda terminal/prompt on your local and then go to the directory where the chatbot_with_chatgpt_API.py with the below command
+   cd "folder path"
+
+   Note: Make sure to activate the environment if you have created any other than base environmnet (conda activate envname)
+3. run "python chatbot_with_chatgpt_API.py"
+   ![image](https://github.com/MadhuVamsiA/freedomwithai/assets/143532033/1cf0506e-cf51-4dd1-9d63-ee61367b158d)
+
+4. it is going to give us a one url. click on that or copy paste to any browser.
+5. It will open a window like below. You can enter prompt and click on get response button to get the response.
+   
+ ![image](https://github.com/MadhuVamsiA/freedomwithai/assets/143532033/21589b45-1231-476e-b196-f282160e0661)
 
