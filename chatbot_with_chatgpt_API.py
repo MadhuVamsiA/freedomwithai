@@ -14,8 +14,8 @@ import json
 app = Flask(__name__)
 
 # Define your OpenAI API key and API URL
-OPENAI_API_KEY = "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"
-OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+OPENAI_API_KEY = "Enter openai API key"
+OPENAI_API_URL = "enter the openai API url"
 
 # Define a route for the root URL '/'
 @app.route('/')
