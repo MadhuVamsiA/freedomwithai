@@ -55,3 +55,5 @@ Note: Store the key somewhere as we can't see the key once we created.
    
  ![image](https://github.com/MadhuVamsiA/freedomwithai/assets/143532033/21589b45-1231-476e-b196-f282160e0661)
 
+ Note: Keep the index.html file under the templates folder in the same path where .py folder exists.
+
