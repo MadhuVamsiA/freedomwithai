@@ -117,7 +117,7 @@ def index():
             payload = {
                 "model": "gpt-3.5-turbo",
                 "messages": messages,
-                "temperature": 1.0,
+                "temperature": 0,
                 "top_p": 1.0,
                 "n": 1,
                 "stream": False,
