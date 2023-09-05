@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        .generated-text {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            white-space: pre-line; /* Preserve line breaks */
+        }
+    </style>
+</head>
+<body>
+    <h1>Chatbot Generator</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file">Upload a file:</label><br>
+        <input type="file" name="file" accept=".txt"><br><br>
+        <label for="query">Enter your query:</label><br>
+        <input type="text" name="query" required><br><br>
+        <input type="submit" value="Generate">
+    </form>
+    {% if generated_text %}
+    <h2>Generated Text:</h2>
+    <div class="generated-text">{{ generated_text }}</div>
+    {% endif %}
+</body>
+</html>
