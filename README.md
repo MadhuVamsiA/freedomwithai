@@ -38,7 +38,7 @@ Note: Store the key somewhere as we can't see the key once we created.
    ![image](https://github.com/MadhuVamsiA/freedomwithai/assets/143532033/4f126110-ca11-47d5-92c1-f75cf542eace)
 
 *****************************************
-## 5. How to create index in Pinecone
+## 4. How to create index in Pinecone
 *****************************************
 1. Go to the indexes tab and then you can see the create index option.
 
@@ -55,7 +55,7 @@ Note: Store the key somewhere as we can't see the key once we created.
 
 
 ***************************************************
-# 3. Install the required libraries in python environment
+# 5. Install the required libraries in python environment
 ****************************************************
 !pip install --upgrade langchain openai  -q
 
@@ -74,7 +74,7 @@ Note: Store the key somewhere as we can't see the key once we created.
 !pip install requests
 
 **********************************************
-# 4. Run the .py file
+# 6. Run the .py file
 **********************************************
 1. Open anconda terminal/prompt on your local and then go to the directory where the chatbotv2_minilm_V2.py with the below command
    cd "folder path"
