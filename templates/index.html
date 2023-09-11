@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>OpenAI Chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
 </head>
 <body>
-    <h1>OpenAI Chat</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <p>
-            <label for="prompt">Enter a prompt:</label>
-            <input type="text" name="prompt" id="prompt">
-        </p>
-        <p>OR</p>
-        <p>
-            <label for="record">Record audio:</label>
-            <input type="submit" name="record" value="Record">
-        </p>
-        <p>
+    <h1>Voice Assistant</h1>
+    
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <div>
+            <label for="prompt">Enter your text prompt:</label>
+            <input type="text" name="prompt" id="prompt" placeholder="Type your message...">
             <input type="submit" value="Submit">
-        </p>
+        </div>
     </form>
+
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <div>
+            <label for="record">Record a voice message:</label>
+            <input type="submit" name="record" value="Record">
+        </div>
+    </form>
+
     {% if user_input %}
-    <h2>Your Input:</h2>
-    <p>{{ user_input }}</p>
-    <h2>AI Response:</h2>
-    <p>{{ response }}</p>
+        <div>
+            <h2>Your Input:</h2>
+            <p>{{ user_input }}</p>
+        </div>
+    {% endif %}
+
+    {% if response %}
+        <div>
+            <h2>Response:</h2>
+            <p>{{ response }}</p>
+        </div>
     {% endif %}
 </body>
 </html>
